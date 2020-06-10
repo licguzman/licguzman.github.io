@@ -2,47 +2,59 @@
 <html  >
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ /* Móviles en horizontal o tablets en vertical */
+        @media (max-width: 767px) { 
+            #galeria {
+                columns:2;
+            }
 
-<style style="css" type="text/css">.banner {
-                    position: relative;
-                    overflow: hidden;
-                    background: rgba(0, 150, 50, .6) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
-                    color: #fff;
-                    font-family: 'Rubik', sans-serif;
-                    font-size: 1.0rem;
-                    font-weight: 600;
-                    text-transform: none;
-                    text-align: center;
-                    height: 100vh;
-                    line-height:1.0rem;
-                    vertical-alignment:middle;
-                    letter-spacing: 0px;
-                    }
-                .banner__video { position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    width: auto;
-                    min-width: 100%;
-                    height: auto;
-                    min-height: 100%;
-                    -webkit-transform: translateX(-50%) translateY(-50%);
-                    transform: translateX(-50%) translateY(-50%);
-                    z-index: -1;
-                    }
-                   
-                .XYZ{
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    width:100%;
-                    transform: translate(-50%, -50%);
-                    -webkit-transform: translate(-50%, -50%);
-                }
-	<style type="text/css">::-webkit-scrollbar {  width: 8px; float: left;}
-::-webkit-scrollbar-track {  background: rgba(0,0,0,1.0); }
-::-webkit-scrollbar-thumb {  background: rgba(100,100,100,1.0);  border-radius:20px;}
-::-webkit-scrollbar-thumb:hover {  background: rgba(0,200,0,1.0);  border-radius:20px;}
+        }
+        
+        /* Móviles en vertical */
+
+        @media (max-width: 580px) {
+            #galeria {
+                columns: 1;
+            }
+        }
 	</style>
+	<style style="css" type="text/css">.banner { 
+					position: relative; 
+					overflow: hidden; 
+					background: rgba(0, 150, 50, .6) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
+					color: #fff; 
+					font-family: 'Rubik', sans-serif; 
+					font-size: 1.0rem; 
+					font-weight: 600; 
+					text-transform: none; 
+					text-align: center; 
+					height: 100vh; 
+					line-height:1.0rem;
+					vertical-alignment:middle;
+					letter-spacing: 0px; 
+					} 
+				.banner__video { position: absolute; 
+					top: 50%; 
+					left: 50%; 
+					width: auto; 
+					min-width: 100%; 
+					height: auto; 
+					min-height: 100%; 
+					-webkit-transform: translateX(-50%) translateY(-50%); 
+					transform: translateX(-50%) translateY(-50%); 
+					z-index: -1; 
+					} 
+					
+				.XYZ{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width:100%;
+					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+				}
+	</style>
+	<style type=
 
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
