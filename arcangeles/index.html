@@ -1,7 +1,47 @@
 <!DOCTYPE html>
 <html  >
 <head>
-  
+  <style style="css" type="text/css">.banner { 
+					position: relative; 
+					overflow: hidden; 
+					background: rgba(0, 150, 50, .6) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAF0lEQVQIW2NkYGD4z8DAwMgAI0AMDA4AI3EBBCKrOnQAAAAASUVORK5CYII=');
+					color: #fff; 
+					font-family: 'Rubik', sans-serif; 
+					font-size: 1.0rem; 
+					font-weight: 600; 
+					text-transform: none; 
+					text-align: center; 
+					height: 100vh; 
+					line-height:1.0rem;
+					vertical-alignment:middle;
+					letter-spacing: 0px; 
+					} 
+				.banner__video { position: absolute; 
+					top: 50%; 
+					left: 50%; 
+					width: auto; 
+					min-width: 100%; 
+					height: auto; 
+					min-height: 100%; 
+					-webkit-transform: translateX(-50%) translateY(-50%); 
+					transform: translateX(-50%) translateY(-50%); 
+					z-index: -1; 
+					} 
+					
+				.XYZ{
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					width:100%;
+					transform: translate(-50%, -50%);
+					-webkit-transform: translate(-50%, -50%);
+				}
+	</style>
+	<style type="text/css">::-webkit-scrollbar {  width: 8px; float: left;}
+::-webkit-scrollbar-track {  background: rgba(0,0,0,1.0); }
+::-webkit-scrollbar-thumb {  background: rgba(100,100,100,1.0);  border-radius:20px;}
+::-webkit-scrollbar-thumb:hover {  background: rgba(0,200,0,1.0);  border-radius:20px;}
+	</style>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="obi">
@@ -68,7 +108,7 @@
     </nav>
 </section>
 
-<section class="header6 cid-s19kmVYAa0 mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=xQB_bhMqZnI" id="header6-1">
+<video autoplay="" class="banner__video" loop="" muted=""><source src="barber.mp4" type="video/mp4" /></video>
 
     
 
@@ -268,5 +308,12 @@
   <script src="assets/slidervideo/script.js"></script>
   
   
+  <input name="animation" type="hidden">
+  <p><strong><script> 
+			var intro = document.querySelector('.banner'); 
+			var introPlayer = document.querySelector('.banner__video'); 
+			var iOS = /iPad|iPhone|iPod/.test(navigator.platform); 
+			if (iOS) { intro.style.backgroundImage = 'url("' + introPlayer.poster + '")'; introPlayer.style.display = 'none'; } 
+		</script> </strong></p>
 </body>
 </html>
