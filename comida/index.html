@@ -305,5 +305,13 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+	
+	 <input name="animation" type="hidden">
+  <p><strong><script> 
+			var intro = document.querySelector('.banner'); 
+			var introPlayer = document.querySelector('.banner__video'); 
+			var iOS = /iPad|iPhone|iPod/.test(navigator.platform); 
+			if (iOS) { intro.style.backgroundImage = 'url("' + introPlayer.poster + '")'; introPlayer.style.display = 'none'; } 
+		</script> </strong></p>
   </body>
 </html>
