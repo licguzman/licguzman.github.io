@@ -59,6 +59,8 @@
       "src": "./img/favicon.png",
       "sizes": "16x16",
       "type": "image/png"
+      "purpose": "any maskable" // <-- New property value `"maskable"`
+
     }
   ]
 }
