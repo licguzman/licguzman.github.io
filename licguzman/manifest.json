@@ -1,7 +1,7 @@
 {
-  "name": "#Licguzmanhaceetuapp",
-  "short_name": "#Lic.Guzmán,
-  "description": "Bienvenid@s a Lic. Guzmán hace tu app,
+  "name": "#ProgramadorFitness",
+  "short_name": "#ProgramadorFitness",
+  "description": "Bienvenid@s a #ProgramadorFitness, serie de videos, donde te daré consejos para llevar una vida saludable y evitar el sedentarismo. Recuerda... mente sana en cuerpo sano :)",
   "background_color": "#2B2B2B",
   "theme_color": "#F0DB4F",
   "orientation": "portrait",
